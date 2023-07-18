@@ -6,6 +6,11 @@
     <title>day11</title>
     <link rel="stylesheet" href="/css/null.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
   <body>
     <section class="main">
@@ -14,10 +19,14 @@
           <div class="main__header-logo">
             <img src="/assets/main/logo.svg" alt="" />
             <ul class="main__header__links">
-              <li class="main__header-link"><a href="">destinations</a></li>
-              <li class="main__header-link"><a href="">experiences</a></li>
-              <li class="main__header-link"><a href="">about</a></li>
-              <li class="main__header-link"><a href="">gallery</a></li>
+              <li class="main__header-link">
+                <a href="#destinations">destinations</a>
+              </li>
+              <li class="main__header-link">
+                <a href="#experiences">experiences</a>
+              </li>
+              <li class="main__header-link"><a href="#about">about</a></li>
+              <li class="main__header-link"><a href="#gallery">gallery</a></li>
             </ul>
           </div>
           <div class="main__header-use">
@@ -31,7 +40,7 @@
         </header>
         <section class="main__text">
           <h1 class="main__text-title">explore indonesia</h1>
-          <button class="main__text-button">Start travelling</button>
+          <button class="button main__text-button">Start travelling</button>
         </section>
         <footer class="main__footer">
           <div class="main__footer-left">
@@ -60,7 +69,7 @@
       </div>
     </section>
 
-    <section class="articles">
+    <section class="articles" id="destinations">
       <div class="article">
         <div class="grad"></div>
         <div class="article__body">
@@ -75,7 +84,7 @@
               Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce
               commodo magna et libero mollis rhoncus.
             </h2>
-            <button class="article-use-button">Learn More</button>
+            <button class="button article-use-button">Learn More</button>
           </div>
         </div>
       </div>
@@ -90,7 +99,7 @@
               Lorem ipsum dolor sit amet, consectetur adip iscing elit. Fusce
               commodo magna et libero mollis rhoncus.
             </h2>
-            <button class="article-use-button">Learn More</button>
+            <button class="button article-use-button">Learn More</button>
           </div>
           <div class="article-image">
             <img src="/assets/articles/article2.png" alt="" />
@@ -99,19 +108,27 @@
       </div>
     </section>
 
-    <section class="Explore">
+    <section class="Explore" id="experiences">
       <div class="Explore__body">
         <h1 class="Explore__body-title">Explore Our Secrets</h1>
-        <div class="Explore__body-carusel">
-          <div class="image">
-            <img src="/assets/Explore/image1.png" alt="" />
-          </div>
-          <div class="image">
-            <img src="/assets/Explore/image2.png" alt="" />
-          </div>
-          <div class="image">
-            <img src="/assets/Explore/image3.png" alt="" />
-          </div>
+        <div class="carusels">
+          <img
+            class="carusel-image"
+            src="/assets/Explore/image1.png"
+            alt=""
+          /><img
+            class="carusel-image"
+            src="/assets/Explore/image2.png"
+            alt=""
+          /><img
+            class="carusel-image"
+            src="/assets/Explore/image3.png"
+            alt=""
+          /><img
+            class="carusel-image"
+            src="/assets/Explore/image3.png"
+            alt=""
+          />
         </div>
       </div>
       <div class="Explore-numbers">
@@ -155,10 +172,10 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet
         magna commodo, tempus dolor sit amet, laoreet elit. Donec mauris tortor.
       </h2>
-      <button class="map-button">Learn More</button>
+      <button class="map-button button">Learn More</button>
     </section>
 
-    <section class="video">
+    <section class="video" id="about">
       <h1 class="video-title">
         Live a life like you wouldn’t imagine, experience a life you wouldn’t
         expect.
@@ -192,7 +209,7 @@
       </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <h1 class="gallery-title">Photo Gallery</h1>
       <div class="gallery-desc">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -246,5 +263,16 @@
       </div>
       <div class="button"><img src="/assets/footer/button.svg" alt="" /></div>
     </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="/scripts/script.js"></script>
   </body>
 </html>
